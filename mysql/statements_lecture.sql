@@ -1,3 +1,5 @@
+USE employees;
+
 # # ================================= INSERT STATEMENTS
 #
 # # Inserting a record
@@ -171,4 +173,5 @@
 #
 #
 #
-#
+
+
