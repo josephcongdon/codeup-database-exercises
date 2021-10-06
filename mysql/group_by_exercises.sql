@@ -28,6 +28,18 @@ WHERE first_name = 'Irena'
 || first_name = 'Maya'
 GROUP BY gender;
 
+SELECT CONCAT(first_name,' ', last_name,' ', hire_date) FROM employees
+WHERE gender = 'F'
+ORDER BY hire_date DESC
+LIMIT 10;
 
 
+SELECT title, COUNT(*) FROM titles
+GROUP BY title
+ORDER BY COUNT(*) DESC
+LIMIT 3;
 
+SELECT from_date, COUNT(*) from titles
+GROUP BY from_date
+ORDER BY  COUNT(*) DESC
+LIMIT 1;
