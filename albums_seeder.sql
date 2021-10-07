@@ -48,4 +48,3 @@ INSERT INTO albums (artist, name, release_date, genre, sales) VALUES
 ('Pink Floyd','The Wall',1979,'Progressive Rock',17.6),
 ('Santana','Supernatural',1999,'Rock',20.5),
 ('Guns N Roses','Appetite for Destruction',1987,'Hard Rock',21.6);
-SELECT * FROM albums WHERE artist  = 'The Beatles';

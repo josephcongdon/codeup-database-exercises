@@ -32,9 +32,9 @@ DESCRIBE albums;
 ALTER TABLE albums ADD UNIQUE unique_artists (artist, name);
 
 CREATE TABLE persons (
-                         id INT UNSIGNED NOT NULL AUTO_INCREMENT,
-                         first_name VARCHAR(25) NOT NULL,
-                         album_id INT UNSIGNED NOT NULL,
-                         PRIMARY KEY (id),
-                         FOREIGN KEY (album_id) REFERENCES albums (id)
+    id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+    first_name VARCHAR(25) NOT NULL,
+    album_id INT UNSIGNED NOT NULL,
+    PRIMARY KEY (id),
+    FOREIGN KEY (album_id) REFERENCES albums (id)
 );
