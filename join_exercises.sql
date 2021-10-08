@@ -64,7 +64,8 @@ FROM employees as e
          JOIN dept_manager as de
               ON de.emp_no = e.emp_no
          JOIN departments as d
-              ON d.dept_no = de.dept_no;
+              ON d.dept_no = de.dept_no
+WHERE to_date LIKE '9%';
 
 
 SELECT CONCAT(e.first_name, ' ', e.last_name) AS 'Department Manager', d.dept_name
@@ -73,8 +74,10 @@ FROM employees as e
               ON de.emp_no = e.emp_no
          JOIN departments as d
               ON d.dept_no = de.dept_no
-WHERE gender='F';
+WHERE to_date LIKE '9%' && gender='F';
 
+
+SHOW DATABASES;
 
 SELECT title, COUNT(title)
 FROM titles t JOIN dept_emp de ON t.emp_no = de.emp_no JOIN departments d ON de.dept_no = d.dept_no
